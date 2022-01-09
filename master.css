@@ -15,7 +15,7 @@
   
   .logo {
     cursor: pointer;
-    width: 50 75;
+    width: 75 100;
   }
   
   .nav__links a,
@@ -23,7 +23,7 @@
   .overlay__content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: red;
+    color: white;
     text-decoration: none;
   }
   
