@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: white;
+    background-color: red;
   }
   
   .logo {
@@ -23,7 +23,7 @@
   .overlay__content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: red;
+    color: white;
     text-decoration: none;
   }
   
