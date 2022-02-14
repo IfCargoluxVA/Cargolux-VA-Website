@@ -1,129 +1,285 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-image: "./3.jpg";
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: red;
-  }
-  
-  .logo {
-    cursor: pointer;
-    width: 75 100;
-  }
-  
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a {
-    transition: color 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: #0088a9;
-  }
-  
-  .cta {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  }
-  
-  /* Mobile Nav */
-  
-  .menu {
-    display: none;
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #24252a;
-    overflow-x: hidden;
-    transition: width 0.5s ease 0s;
-  }
-  
-  .overlay--active {
-    width: 100%;
-  }
-  
-  .overlay__content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: red;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 15px 45px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+footer {
+  color: #37423b;
+  font-size: 14px;
+  background: #eef0ef;
+
+
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
   .overlay a {
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: color 0.3s ease 0s;
-  }
-  
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #0088a9;
+    font-size: 20px;
   }
   .overlay .close {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: #edf0f1;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
+}
+
+@media only screen and (max-width:1080px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+  .join {
+    display: none;
+  }
+}
+
+
+
+.bg_img {
+  width: 1450px;
+  height: 690px;
+}
+
+
+
+.describe {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: red;
+  left: 0;
+  line-height: 50px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
   
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px;
-    }
-    .overlay .close {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
   
-  @media only screen and (max-width: 800px) {
-    .nav__links,
-    .cta {
-      display: none;
-    }
-    .menu {
-      display: initial;
-    }
-  }
+}
+
+/* From cssbuttons.io by @nikk7007 */
+.join {
+  padding: 0.8em 1.8em;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;  
+  font-size: 16px;
+  transition: .7s;
+  z-index: 1;
+  font-family: inherit;
+  color: red;
+ }
+ 
+ .join::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: red;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .join:hover::before {
+  width: 105%;
+ }
+ 
+ .join:hover {
+  color: white;
+  background-color: red;
+ }
+ 
+
+
+
+ .footer{
+  font-family: "Montserrat", sans-serif;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  text-decoration: none;
+}
+
+.section-one, .section-two, .section-three{ 
+  padding: 5%;
+  font-size: larger;
+  color: Black;
+  text-align: center;
+
+
+}
+
+
+.email {
+  position: relative;
+  text-align: center;
+  left: -250px;
+  bottom: -250px;
+}
+
+.va-slogan {
+  position: relative;
+  text-align: center;
+  left: -450px;
+  bottom: -350px;
+}
+
+
+.join-today {
+  position: relative;
+  text-align: center;
+  left: -1100px;
+  bottom: -350px;
+
+}
+
+.join-now {
+  color: #FFF;
+  border: 2px solid red;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 red;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+ 
+.join-now::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;  display: block;
+  z-index: -1;
+}
+ 
+
+ 
+.join-now:hover {
+  color: white;
+  background-color: red;
+  box-shadow: inset 400px 0 0 0 red;
+}
   
