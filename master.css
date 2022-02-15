@@ -57,13 +57,7 @@ header {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
-footer {
-  color: #37423b;
-  font-size: 14px;
-  background: #eef0ef;
 
-
-}
 
 /* Mobile Nav */
 
@@ -81,6 +75,7 @@ footer {
   background-color: #24252a;
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
+
 }
 
 .overlay--active {
@@ -93,6 +88,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .overlay a {
@@ -123,6 +119,9 @@ footer {
     top: 15px;
     right: 35px;
   }
+  .join {
+    display: none;
+  }
 }
 
 @media only screen and (max-width:1080px) {
@@ -133,9 +132,7 @@ footer {
   .menu {
     display: initial;
   }
-  .join {
-    display: none;
-  }
+
 }
 
 
@@ -185,9 +182,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
   background: red;
-  transition: .5s ease;
   display: block;
   z-index: -1;
  }
@@ -201,43 +196,6 @@ footer {
   background-color: red;
  }
  
-
-
-
- .footer{
-  font-family: "Montserrat", sans-serif;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  text-decoration: none;
-}
-
-.section-one, .section-two, .section-three{ 
-  padding: 5%;
-  font-size: larger;
-  color: Black;
-  text-align: center;
-
-
-}
-
-
-.email {
-  position: relative;
-  text-align: center;
-  left: -250px;
-  bottom: -250px;
-}
-
-.va-slogan {
-  position: relative;
-  text-align: center;
-  left: -450px;
-  bottom: -350px;
-}
 
 
 .join-today {
@@ -282,4 +240,71 @@ footer {
   background-color: red;
   box-shadow: inset 400px 0 0 0 red;
 }
+
+.footer-container {
+  background-color: red;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.footer {
+  width: 80%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
   
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footer-heading h1 {
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+
+}
+
+.footer-heading a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width:1080px){
+  .footer {
+    height: 50vh;
+  }
+}
+
+
+@media screen and (max-width:1080){
+  .footer {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width:820px){
+  .footer {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width:720){
+  .email {
+    display: none;
+  }
+
+  .footer-3 {
+    display: none;
+  }
+}
