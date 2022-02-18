@@ -136,111 +136,6 @@ header {
 }
 
 
-
-.bg_img {
-  width: 1450px;
-  height: 690px;
-}
-
-
-
-.describe {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  color: red;
-  left: 0;
-  line-height: 50px;
-  margin-top: -100px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-  
-  
-}
-
-/* From cssbuttons.io by @nikk7007 */
-.join {
-  padding: 0.8em 1.8em;
-  border: 2px solid red;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  text-align: center;
-  text-transform: uppercase;  
-  font-size: 16px;
-  transition: .7s;
-  z-index: 1;
-  font-family: inherit;
-  color: red;
- }
- 
- .join::before {
-  content: '';
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: red;
-  display: block;
-  z-index: -1;
- }
- 
- .join:hover::before {
-  width: 105%;
- }
- 
- .join:hover {
-  color: white;
-  background-color: red;
- }
- 
-
-
-.join-today {
-  position: relative;
-  text-align: center;
-  left: -1100px;
-  bottom: -350px;
-
-}
-
-.join-now {
-  color: #FFF;
-  border: 2px solid red;
-  border-radius: 0px;
-  padding: 18px 36px;
-  display: inline-block;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 red;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-}
- 
-.join-now::before {
-  content: '';
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: red;  display: block;
-  z-index: -1;
-}
- 
-
- 
-.join-now:hover {
-  color: white;
-  background-color: red;
-  box-shadow: inset 400px 0 0 0 red;
-}
-
 .footer-container {
   background-color: red;
   padding-top: 2rem;
@@ -280,31 +175,41 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width:1080px){
-  .footer {
-    height: 50vh;
-  }
+
+.dropbtn {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-
-@media screen and (max-width:1080){
-  .footer {
-    padding-top: 2rem;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-@media screen and (max-width:820px){
-  .footer {
-    padding-top: 2rem;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-@media screen and (max-width:720){
-  .email {
-    display: none;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .footer-3 {
-    display: none;
-  }
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
 }
