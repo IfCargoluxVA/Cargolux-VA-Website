@@ -1,0 +1,69 @@
+
+.bg_img {
+  width: 1450px;
+  height: 690px;
+}
+
+
+
+.describe {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: red;
+  left: 0;
+  line-height: 50px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  
+  
+}
+
+/* From cssbuttons.io by @nikk7007 */
+.join {
+  padding: 0.8em 1.8em;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;  
+  font-size: 16px;
+  transition: .7s;
+  z-index: 1;
+  font-family: inherit;
+  color: red;
+ }
+ 
+ .join::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .join:hover::before {
+  width: 105%;
+ }
+ 
+ .join:hover {
+  color: white;
+  background-color: red;
+ }
+ 
+
+
+.join-today {
+  position: relative;
+  text-align: center;
+  left: -1100px;
+  bottom: -350px;
+
+}
